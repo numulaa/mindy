@@ -1,0 +1,22 @@
+<main>
+    <div class="container">
+<ul class="post-lists">
+
+
+    <% @posts.each do |post| %>
+     <div class="post-card">
+      <li> 
+        <div class="card-title-wrapper">
+            <h2 class="card-post-title"> <%= post.title%></h2>
+            <span class="card-post-time"><%= post.created_at.strftime("%B %d, %Y")%></span>
+         </div>
+        <div class="card-post-body"><%= truncate(post.body, :length => 300) %></div>
+        <div class="card-show-post-details-link">  <%= link_to "Read", post%></div>
+      </li>
+      </div>
+    <%end%>
+     
+ 
+</ul>
+</div>
+</main>

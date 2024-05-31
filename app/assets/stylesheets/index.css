@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Inter";
+  src: url("inter/Inter-VariableFont_slnt,wght.ttf");
+}
+body,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+main {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  max-width: 750px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+nav .nav-list {
+  display: flex;
+  gap: 1rem;
+}
+nav .nav-list a {
+  color: #0f0f0f;
+}
+nav .nav-list a:hover,
+nav .nav-list a:active {
+  color: #f0cea0;
+}
+header nav .logo::after {
+  content: "!";
+  color: #f0cea0;
+  font-size: larger;
+}
+/* home page */
+.container {
+  padding: 3rem;
+  max-width: 750px;
+  width: 100%;
+}
+.post-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.post-card {
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+}
+.post-card > li {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.card-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.card-post-time {
+  font-size: 0.75em;
+}
+.card-show-post-details-link a {
+  text-decoration: none;
+  color: #0f0f0f;
+  background-color: #f0cea0;
+  padding: 0.5em 1em;
+}
+
+/* show page */
+.show-page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.show-page-container p {
+  line-height: 1.5;
+}
+.post-detail-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.post-detail-title {
+  font-size: 48px;
+  font-weight: 500;
+  width: 60%;
+}
